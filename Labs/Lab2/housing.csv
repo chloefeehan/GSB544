@@ -1,0 +1,21 @@
+﻿geography,year,housing_price
+San Francisco,2015,"1250000	"
+San Francisco,2016,1326500
+San Francisco,2017,1420000
+San Francisco,2018,1600000
+San Francisco,2019,1600000
+Los Angeles,2015,502750
+Los Angeles,2016,522520
+Los Angeles,2017,577690
+Los Angeles,2018,588140
+Los Angeles,2019,641340
+San Diego,2015,530000
+San Diego,2016,568000
+San Diego,2017,605000
+San Diego,2018,618500
+San Diego,2019,655000
+Sacramento,2015,285000
+Sacramento,2016,300000
+Sacramento,2017,320000
+Sacramento,2018,350000
+Sacramento,2019,370000
