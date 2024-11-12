@@ -3136,14 +3136,15 @@ vertical-align: -.125em;
   <li><a href="#using-only-the-five-best-variables.-3" id="toc-using-only-the-five-best-variables.-3" class="nav-link" data-scroll-target="#using-only-the-five-best-variables.-3">Using only the five best variables.</a></li>
   <li><a href="#using-the-five-best-numeric-variables-and-their-interactions-with-the-one-best-categorical-variable.-3" id="toc-using-the-five-best-numeric-variables-and-their-interactions-with-the-one-best-categorical-variable.-3" class="nav-link" data-scroll-target="#using-the-five-best-numeric-variables-and-their-interactions-with-the-one-best-categorical-variable.-3">Using the five best numeric variables and their interactions with the one best categorical variable.</a></li>
   </ul></li>
+  </ul></li>
   <li><a href="#part-three-discussion" id="toc-part-three-discussion" class="nav-link" data-scroll-target="#part-three-discussion">Part Three: Discussion</a>
   <ul class="collapse">
   <li><a href="#part-a-ridge" id="toc-part-a-ridge" class="nav-link" data-scroll-target="#part-a-ridge">Part A: Ridge</a></li>
   <li><a href="#part-b-lasso" id="toc-part-b-lasso" class="nav-link" data-scroll-target="#part-b-lasso">Part B: LASSO</a></li>
   <li><a href="#part-c-elastic-net" id="toc-part-c-elastic-net" class="nav-link" data-scroll-target="#part-c-elastic-net">Part C: Elastic Net</a></li>
   </ul></li>
-  </ul></li>
   <li><a href="#part-four-final-model" id="toc-part-four-final-model" class="nav-link" data-scroll-target="#part-four-final-model">Part Four: Final Model</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
   </ul>
 </nav>
 </div>
@@ -4829,8 +4830,9 @@ Best cross-validated MSE score: 125801.75705113329</code></pre>
 <p>Based on the MSE values for the models specified above, it appears that the best-performing model is the five best numeric variables and their interactions with the one best categorical variable. The Lasso and Elastic Net Regression for this model produced the lowest overall MSE, indicating that the inclusion of these interaction variables improves the model’s performance.</p>
 </section>
 </section>
-<section id="part-three-discussion" class="level2">
-<h2 class="anchored" data-anchor-id="part-three-discussion">Part Three: Discussion</h2>
+</section>
+<section id="part-three-discussion" class="level1">
+<h1>Part Three: Discussion</h1>
 <section id="part-a-ridge" class="level3">
 <h3 class="anchored" data-anchor-id="part-a-ridge">Part A: Ridge</h3>
 <p>Compare your Ridge models with your ordinary regression models. How did your coefficients compare? Why does this make sense?</p>
@@ -4846,7 +4848,6 @@ Best cross-validated MSE score: 125801.75705113329</code></pre>
 <h3 class="anchored" data-anchor-id="part-c-elastic-net">Part C: Elastic Net</h3>
 <p>Compare your MSEs for the Elastic Net models with those for the Ridge and LASSO models. Why does it make sense that Elastic Net always “wins”?</p>
 <p>The MSEs for the Elastic Net models always outperform across all different scenarios. This is because Elastic Net combines the penalties from both Ridge and Lasso regressions, making it more robust. It is particularly effective in handling correlated features, which Lasso may struggle with, while still benefiting from the feature selection properties of Lasso and the regularization strength of Ridge. The consistent lower MSEs across scenarios show that Elastic Net is better equipped to manage overfitting while still capturing the underlying patterns in the data.</p>
-</section>
 </section>
 </section>
 <section id="part-four-final-model" class="level1">
@@ -4989,8 +4990,12 @@ Mean Squared Error: 111626.48289803522</code></pre>
 </div>
 </div>
 </div>
-<p>The final and best model is the elastic net model with an lambda value of 10 and an l1_ratio value of 1. The calculated MSE for the best model is 100729.64. Out of all MSE values calulated with different models, this produces the lowest MSE, indicating that this model is performing better when predicting the salary.</p>
+<p>The final and best model is the elastic net model with an lambda value of 10 and an l1_ratio value of 1. The calculated MSE for the best model is 111626.48. Out of all MSE values calulated with different models, this produces the lowest MSE, indicating that this model is performing better when predicting the salary.</p>
 <p>The scatterplot above shows that the values tend to follow the trend of the line of best fit, however they do not perfectly follow the line of best fit. Although not perfect, it still captures the overall postive correlation of the actual versus predicted values.</p>
+</section>
+<section id="appendix" class="level1">
+<h1>Appendix</h1>
+<p>Generative AI statement: Generative AI assisted in streamlining workflow processes and troubleshooting errors, particularly in coding tasks. It was instrumental in helping write functions and creating the interaction variable dataframe, enhancing the efficiency and accuracy of the overall analysis.</p>
 </section>
 
 </main>
